@@ -48,6 +48,7 @@ header {
     display: grid;
     justify-items: center;
     background: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2);
 }
 
 .header--nav ul {
@@ -162,7 +163,8 @@ main {
 .product {
     border-radius: 1rem;
     padding: 1rem;
-    background: #f1f1f1;
+    background: #087E8B;
+    color: #fff;
 }
 .product--icon {
     justify-self: center;
@@ -213,13 +215,8 @@ main {
 .workshop {
     padding: 1rem;
     border-radius: 1rem;
-    background: #f1f1f1;
-}
-
-@media only screen and (min-width: 500px) {
-    .workshops {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    background: #087e8b;
+    color: #fff;
 }
 
 /** video stylying **/
@@ -256,6 +253,9 @@ main {
 }
 
 @media only screen and (min-width: 500px) {
+    .workshops {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .form {
         grid-template-columns: 3fr 1fr;
         /* align-items: center; */
