@@ -5,23 +5,110 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
         <link rel="stylesheet" href="css/styles.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     </head>
     <body>
         <header id="header">
-                <img src="" alt="" id="header-img">
-                <nav id="nav-bar">
-                    <div class="nav-link"></div>
-                    <div class="nav-link"></div>
-                    <div class="nav-link"></div>
-                </nav>
-            </header>
-            <main>
-                <video src="" id="video"></video>
-                <form action="POST" id="form">
-                    <input type="email" id="email" placeholder="JohnJacob@Jinglheimer.org">
-                    <input id="submit" type="submit">Submit</input>
-                </form>
-            </main>
+            <nav class="header--nav" id="nav-bar">
+                <ul>
+                    <li class="nav--logo nav--item"><a href="#"><img class="header--logo header--logo-small"
+                        src="images/raspberry-pi.svg" alt="Raspberry Pi logo small" /></a></li>
+                    <li class="nav--item"><a href="" class="nav-link">Products</a></li>
+                    <li class="nav--item"><a href="#video" class="nav-link">Workshops</a></li>
+                    <li class="nav--item"><a href="#form" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <h1 class="header--title">The Bakery</h1>
+            <img class="header--logo" src="images/raspberry-pi.svg" alt="Raspberry Pi logo" id="header-img" />
+        </header>
+        <main>
+            <section class="about__us">
+                <h2 class="about__us--title">Helping you make what you desire</h2>
+                <div class="about__us--bullet">
+                    <h3>Experience</h3>
+                    <p>
+                        Our team of single-board computing enthusiests has over 35 years of experience building 
+                        everything from home automation tools, to gaming consoles.
+                    </p>
+                </div>
+                <div class="about__us--bullet">
+                    <h3>Customization</h3>
+                    <p>
+                        By way of my neighbor Todd's 3d printer I can offer fully customized cases and housing for
+                        any project you can think of.
+                    </p>
+                </div>
+                <div class="about__us--bullet">
+                    <h3>Service</h3>
+                    <p>
+                        Any product purchased through us comes with 24/7 customer support via my personal pager number
+                        etched on to the underside of each device we sell.
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <h2 class="products--title">What do we have to offer?</h2>
+                <div class="product retro__pi">
+                    <h3>Retro Pie - $89.99</h3>
+                    <p>
+                        Gaming fan? Waiting for nintendo to pump out more NES Classics? Well wait no longer friend! 
+                        Every game from Frogger to Battle Toads available at your fingertips! A Raspberry Pi powered
+                        emulation station that can handle smooth emulation of most gaming systems prior to the N64 
+                        (and some N64 titles with a little tinkering).
+                    </p>
+                </div>
+                <i class="fas fa-gamepad retro__pi--icon product--icon"></i>
+                <div class="product media__server">
+                    <h3>Media Server - starting at $69.99</h3>
+                    <p>
+                        Want to ditch your physical media? Tired of buying the same movie over and over again? Is your
+                        digital movie collection spread across 4 different sites? With our media server packages we can
+                        ensure slow wifi speeds and scratched discs never become a problem again!
+                    </p>
+                </div>
+                <i class="fas fa-server media__server--icon product--icon"></i>
+                <div class="product camera">
+                    <h3>Security Camera - starting at $99.99</h3>
+                    <p>
+                        Have a sneaking suspision the nanny has been stealing your Peruvian figs? Is your spouse likely
+                        cheating on you and want to catch them in the act? Are you a creepy landlord looking to spy on
+                        unsuspecting tennats? Look no further with a few simple modifications your raspberry-pi can start
+                        streaming video of your cheating spouse straight to your mobile device! Or you can catch that
+                        pesky russian insurance fraud with your Alexa enabled dash cam!
+                    </p>
+                </div>
+                <i class="fas fa-video camera--icon product--icon"></i>
+            </section>
+            <section class="workshops">
+                <h2 class="workshops--title">Building workshops</h2>
+                <div class="workshop">
+                    <h3>Bake with the Pros</h3>
+                    <h4>Tuesday and Thursday from 5pm to 8pm</h4>
+                    <p>
+                        Come learn from our pros for a small fee either pick from one of our packages or come with your
+                        own idea and we'll step you through the hardware and software builds we think can best achieve
+                        your goals. (Depending on the complexity of your project may take more than one session)
+                    </p>
+                </div>
+                <div class="workshop">
+                    <h3>Top Baker</h3>
+                    <h4>Last Sunday of each month from 10am through 6pm</h4>
+                    <p>
+                        Come compete with other hobbyists! We give you 8 hours to design and build something fun and
+                        innovative, be the one to impress the judges and you walk away with a $200 gift card to The Bakery!
+                    </p>
+                </div>
+            </section>
+            <video src="" id="video"></video>
+            <form class="form" action="POST" id="form">
+                <h2>Sign up for our newsletter:</h2>
+                <div class="form--email">
+                    <input class="form--email--input" type="email" id="email" placeholder="JohnJacob@Jinglheimer.org">
+                    <label class="form--email--label" id="email-label" for="email">Email</label>
+                </div>
+                <input class="submit__btn" id="submit" type="submit"></input>
+            </form>
+        </main>
         <script src="js/app.js"></script>
     </body>
 </html>
