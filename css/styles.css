@@ -207,6 +207,7 @@ main {
 
 .workshops--title {
     grid-column: 1 / -1;
+    justify-self: center;
 }
 
 .workshop {
@@ -221,22 +222,70 @@ main {
     }
 }
 
+/** video stylying **/
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:
+    100%;
+    height: 100%;
+}
+
 /** form styling **/
 
 .form {
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: .5rem;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+.form-txt {
+    margin: 0;
+    justify-self: center;
+}
+
+@media only screen and (min-width: 500px) {
+    .form {
+        grid-template-columns: 3fr 1fr;
+        /* align-items: center; */
+    }
+    .form-txt {
+        grid-column: 1 / -1;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .form {
+        grid-template-columns: auto 3fr 1fr;
+        grid-gap: 1rem;
+    }
+    .form-txt {
+        grid-column: 1;
+        align-self: end;
+    }
 }
 
 .form--email {
     display: flex;
     flex-flow: column-reverse;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .form--email--label {
-    font-size: 1.25rem;
+    font-size: .75rem;
     letter-spacing: 0.05rem;
+    /* margin-bottom: .75rem; */
 }
 
 .form--email--label, .form--email--input {
@@ -245,13 +294,12 @@ main {
 }
 
 .form--email--input {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     border: 0;
     border-bottom: 1px solid #ccc;
     font-family: inherit;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
     border-radius: 0;
     padding: 0;
     cursor: text;
@@ -269,7 +317,7 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     transform-origin: left bottom;
-    transform: translate(0, 2.125rem) scale(1);
+    transform: translate(0, 1.5rem) scale(1.5);
 }
 
 .form--email--input::-webkit-input-placeholder {
@@ -283,7 +331,7 @@ main {
 
 .form--email--input:not(:placeholder-shown) + .form--email--label,
 .form--email--input:focus + .form--email--label {
-  transform: translate(0, 0) scale(.75);
+  transform: translate(0, 0) scale(1);
   cursor: pointer;
 }
 
@@ -292,7 +340,7 @@ main {
 .submit__btn {
     background: none;
     border: 1px solid #111;
-    padding: 1rem 3rem;
+    padding: .75rem 1.5em;
     justify-self: center;
     text-transform: uppercase;
     transition: .17s all ease-in;

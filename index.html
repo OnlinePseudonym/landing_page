@@ -13,9 +13,9 @@
                 <ul>
                     <li class="nav--logo nav--item"><a href="#"><img class="header--logo header--logo-small"
                         src="images/raspberry-pi.svg" alt="Raspberry Pi logo small" /></a></li>
-                    <li class="nav--item"><a href="" class="nav-link">Products</a></li>
-                    <li class="nav--item"><a href="#video" class="nav-link">Workshops</a></li>
-                    <li class="nav--item"><a href="#form" class="nav-link">Contact Us</a></li>
+                    <li class="nav--item"><a href="#products" class="nav-link">Products</a></li>
+                    <li class="nav--item"><a href="#workshops" class="nav-link">Workshops</a></li>
+                    <li class="nav--item"><a href="#form" class="nav-link">Newsletter</a></li>
                 </ul>
             </nav>
             <h1 class="header--title">The Bakery</h1>
@@ -46,7 +46,7 @@
                     </p>
                 </div>
             </section>
-            <section class="products">
+            <section id="products" class="products">
                 <h2 class="products--title">What do we have to offer?</h2>
                 <div class="product retro__pi">
                     <h3>Retro Pie - $89.99</h3>
@@ -79,8 +79,8 @@
                 </div>
                 <i class="fas fa-video camera--icon product--icon"></i>
             </section>
-            <section class="workshops">
-                <h2 class="workshops--title">Building workshops</h2>
+            <section id="workshops" class="workshops">
+                <h2 class="workshops--title">Workshops and Bakeoffs</h2>
                 <div class="workshop">
                     <h3>Bake with the Pros</h3>
                     <h4>Tuesday and Thursday from 5pm to 8pm</h4>
@@ -99,9 +99,11 @@
                     </p>
                 </div>
             </section>
-            <video src="" id="video"></video>
+            <section id="video">
+                <div class='embed-container'><iframe src='https://www.youtube.com/embed/QwrKlyC2kdM' frameborder='0' allowfullscreen></iframe></div>
+            </section>
             <form class="form" action="POST" id="form">
-                <h2>Sign up for our newsletter:</h2>
+                <p class="form-txt">Sign up for our newsletter:</p>
                 <div class="form--email">
                     <input class="form--email--input" type="email" id="email" placeholder="JohnJacob@Jinglheimer.org">
                     <label class="form--email--label" id="email-label" for="email">Email</label>
